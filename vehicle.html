@@ -22,7 +22,85 @@
     </nav>
 
     <div class="content">
-        <h1> Vehicle </h1>
+        <video width="100%" autoplay muted loop>
+            <source src="media/do14_render_cropped.mp4" type="video/mp4">
+        </video>
+            
+    </div>
+
+    <div class="content">
+        <h2> Powertrain </h2>
+        <div class="inner-flex-container">
+            <div class="info-container">
+                <p> 
+                    The series hybrid vehicle runs on an 800V architecture. Each track is powered by two motors through a reducer gearbox. <br><br>
+                    Two additional motors mated to a 3L V6 engine can be run to charge the battery or provide additional performance headroom of power in addition to the limits of the battery itself. <br>
+                </p>
+            </div>
+            <div class="image-container">
+                <img width="100%" src="media/powertrain.png" alt="powertrain">
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2> Safety </h2>
+        <div class="inner-flex-container">
+            <div class="image-container">
+                <img width="100%" src="media/brakes.png" alt="brakes">
+            </div>
+            <div class="info-container">
+                <p> 
+                    To mitigate the risk of failure, all subsytem supervisors continuously monitor their operational space. A failure in any subsystem will trigger a fault, which will bring the vehicle to a stop. <br> <br>
+                    Along with high performance hydraulic calipers, the vehicle is equipped with a secondary mechanical subsystem that can be used to stop the vehicle in the event of a failure. <br><br>
+                    The brake system itself is designed with failure prevention in mind, with electric current, hydraulic pressure and actuator position being monitored.
+                </p> 
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2> Autonomy </h2>
+
+        <div class="inner-flex-container">
+            <div class="info-container">
+                <p> 
+                    The onboard edge computer that runs the ARL-developed ‘Phoenix’ autonomy stack, based on ROS. This edge computer also logs all the signals transmitted on the CAN buses and ROS messages for data collection. <br><br>
+                    A ‘Planet’ network switch enables the data communication between the computer and the autonomy sensors. All sensors required for the vehicle's autonomous navigation act as PTP clients and receive precise time information via the switch.
+
+                </p> 
+            </div>
+            <div class="image-container">
+                <img src="media/supervisory software.png" alt="powertrain">
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="content">
+        <h2> Structure </h2>
+        <div class="inner-flex-container">
+            <div class="image-container">
+                <img width=100% src="media/structure.png" alt="structure">
+            </div>
+            <div class="info-container">
+                <p> 
+                    
+                </p> 
+            </div>
+        </div>
+    </div> -->
+
+    <div class="content">
+        <h2> Thermal </h2>
+        <div class="inner-flex-container">
+            <div class="info-container">
+                <p> 
+                    The cooling system is designed to sustain vehicle operation at ambient temperatures of up to 49°C. The heat exchangers on both sides of the vehicle are engineered to rely entirely on forced airflow.                </p> 
+            </div>
+            <div class="image-container">
+                <img width=100% src="media/thermal.png" alt="thermal">
+            </div>
+        </div>
     </div>
 
     <div class="footer">
@@ -37,6 +115,9 @@
             &copy; Copyright 2024 CU-ICAR Deep Orange <br> Clemson University
         </div>
     </div>
+
+    <div class="content"></div>
+    <div class="content"></div>
 
 </body>
 </html>
