@@ -21,10 +21,6 @@
         </div>
     </nav>
 
-    <div class="content">
-        <h1> Sensors </h1>
-    </div>
-
     <div class="footer">
         <a href="index.html">Home</a>
         <a href="vehicle.html">Vehicle</a>
@@ -37,6 +33,90 @@
             &copy; Copyright 2024 CU-ICAR Deep Orange <br> Clemson University
         </div>
     </div>
+    
+    <div class="content">
+        <h2> Drivetrain </h2>
+        <div class="inner-flex-container">
+            <div class="info-container">
+                <p> 
+                    By default, the vehicle has numerous sensors in two capacities, either built into the components related to the IC engine, inverters, motors, batteries, etc. or instrumented as sensors that serve as feedback in closed-loop sub-systems. <br><br>
+                    Each inverter relays vital information about motor speed, position, torque estimate, temperature, faults, and other non-critical statistics over the CAN bus. 
+                </p> 
+            </div>
+            <div class="image-container">
+                <img width="100%" src="media/drivetrain.png" alt="brakes">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h2> Perception </h2>
+        <div class="inner-flex-container">
+            <div class="image-container">
+                <img width="100%" src="media/perception.png" alt="brakes">
+            </div>
+            <div class="info-container">
+                <p> 
+                    The autonomy software stack hosts a suite of specialized sensors for mapping and localization. The autonomy stack uses the central long-range OS2 LiDAR and the GNSS unit for localization, mapping, and closing the loop for the motion planners while running in autonomous mode. <br><br>
+                    Keeping in mind the research aspect of this vehicle, it is also equipped with four short-range Ouster OS0 LiDARs, four cameras with a wide-angle lens, two cameras configured as a stereo-pair and an off-the-shelf Zed-2i stereo camera that can be used to collect extensive data for research related to off-road mobility.
+
+                </p> 
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h2> Thermal </h2>
+        <div class="inner-flex-container">
+            <div class="info-container">
+                <p> 
+                    The vehicle monitors temperatures on numerous drivetrain components, including the motor internals, inverters, batteries, and the oil and coolant for the IC engine to prevent damage from overheating. <br><br>
+                    These temperatures are broadcast on the CAN bus and thus recorded in the raw CAN logs, and are vital in modeling the thermal dynamics at the subsystem- and system-level.
+                </p> 
+            </div>
+            <div class="image-container">
+                <img width="100%" src="media/thermal.png" alt="brakes">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h2> Vehicle dynamics </h2>
+        <div class="inner-flex-container">
+            <div class="image-container">
+                
+                <video width="100%" autoplay muted>
+                    <source src="media/vehicle_dynamics.mp4" type="video/mp4">
+                </video> 
+                <!-- <img width="100%" src="media/vehicle_dynamics.gif" alt="brakes"> -->
+            </div>
+            <div class="info-container">
+                <p> 
+                    Brake pressure sensors on either brake system close the loop for control of the brake actuators. <br><br>
+                    Suspension ride height sensors from road cars have been adapted to record the suspension travel of the tracked suspension. <br><br>
+                    These ride height sensors allow mapping of the ground within the vehicle’s frame of reference, additionally allowing the study of off-road vehicle dynamics.
+                </p> 
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h2> Additional sensors </h2>
+        <div class="inner-flex-container">
+            <div class="info-container">
+                <p> 
+                    As part of specific test programs for ride characterization, the vehicle has been equipped with additional instrumentation to facilitate the collection of particular data. <br><br>
+                    Wireless torque sensors at the driveshafts allow high-frequency measurement of the net torque applied to the track sprockets. These sensors also allow the characterization of brake torques, which is impossible with just the torque estimates from the traction inverters. <br><br>
+                    Accelerometers at the roadwheels at the vehicle’s center of gravity and the suspension sensors offer data for ride quality analysis. 
+
+                </p> 
+            </div>
+            <div class="image-container">
+                <video width="100%" autoplay muted loop>
+                    <source src="media/vd_additional.mp4" type="video/mp4">
+                </video> 
+            </div>
+        </div>
+    </div>
+
+    <div class="content"></div>
+    <div class="content"></div>
 
 </body>
 </html>
