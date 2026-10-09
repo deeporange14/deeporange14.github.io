@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deep Orange</title>
-    <link rel="stylesheet" href="style.css">         
+    <title>Data and Publications | Deep Orange 14</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .eyebrow { color: #e85d00; font-size: 13px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+        .publication-links { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0; }
+        .publication-card { display: flex; min-height: 120px; flex-direction: column; justify-content: space-between; gap: 12px; padding: 20px; border: 1px solid #e6e6e6; border-top: 4px solid #ff6900; border-radius: 10px; text-decoration: none; }
+        .publication-card span { color: #777; font-size: 12px; font-weight: bold; text-transform: uppercase; }
+        .publication-card strong { color: #252525; font-size: 18px; }
+        .publication-card em { color: #d95700; font-size: 14px; font-style: normal; font-weight: bold; }
+        .data-channels { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0; padding: 0; list-style: none; justify-content: center; }
+        .data-channels li { padding: 8px 12px; border-radius: 20px; background: #f3f3f3; color: #444; }
+        .citation-list { display: grid; gap: 16px; width: 100%; margin: 10px 0 0; padding: 0; list-style: none; text-align: left; }
+        .citation-entry { padding: 18px; border: 1px solid #e6e6e6; border-left: 4px solid #ff6900; border-radius: 8px; background: #fafafa; }
+        .citation-label { display: inline-block; margin-bottom: 10px; padding: 5px 9px; border-radius: 4px; background: #eee; color: #555; font-size: 12px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
+        .citation-label a { color: #d95700; text-decoration: none; }
+        .citation-text { margin: 0; color: #333; font-size: 15px; line-height: 1.7; overflow-wrap: anywhere; }
+    </style>
 </head>
 
 <body>
@@ -21,24 +36,52 @@
         </div>
     </nav>
 
-    <div class="content">
-        <h2> Coming soon </h2>
-        <p>Telemetry plays a pivotal role in research and development by providing real-world data and insights crucial for modeling, validation and optimization of complex systems. A suitable pipeline for telemetry is set up to aid more high-quality data collection.<br><br>
-            Three channels of information on the vehicle carry vehicle state information and are logged: 
-        <ul style="text-align: left;">
-            <li>ROS bags</li>
-            <li>CAN logs</li>
-            <li>External DAQ for additional sensors</li>
-        </ul>   
-        </p>
+    <div class="content data-page">
+        <p class="eyebrow">Deep Orange 14 | Research resources</p>
+        <h1>DO-14 Dataset & Research paper are published!</h1>
+        <p class="intro">Explore the Deep Orange 14 vehicle dataset and its accompanying research paper. Both resources are publicly available through their respective repositories.</p>
+
+        <div class="publication-links">
+            <a class="publication-card" href="https://zenodo.org/records/22002622" target="_blank" rel="noopener noreferrer">
+                <span>Dataset | Zenodo</span>
+                <strong>Deep Orange 14: A Multi-surface Dynamics Dataset for a Full-scale Tracked High-Speed Off-road Autonomous Prototype</strong>
+                <em>View dataset ⭷</em>
+            </a>
+            <a class="publication-card" href="https://asmedigitalcollection.asme.org/autonomousvehicles/article/doi/10.1115/1.4072695/1235372" target="_blank" rel="noopener noreferrer">
+                <span>Research paper | ASME</span>
+                <strong>Deep Orange 14: A Full-scale Tracked High-speed Off-road Autonomous Prototype with a Comprehensive Multi-surface Dataset for Dynamics</strong>
+                <em>Open article ⭷</em>
+            </a>
+        </div>
     </div>
-    
+
     <div class="content">
-        <h2> Sign up now </h2>
-        <h3> to get notified when the data is released </h3>
-        <p> Scan the code below</p>
-        <img src="media/qr_signup.png" alt="qr signup">
-        <p> Or <a href="signup.html">Click here</a></p>
+        <section aria-labelledby="data-overview-heading">
+            <h2 id="data-overview-heading">About the dataset</h2>
+            <p class="details-copy">Telemetry supports the modeling, validation, and optimization of complex vehicle systems. <br> The published collection includes vehicle-state information recorded through three acquisition methods</p>
+            <ul class="data-channels">
+                <li>ROS bags</li>
+                <li>CAN logs</li>
+                <li>External DAQ sensor data</li>
+            </ul>
+            <p> All data is synchronized, timestamped and packaged into a MATLAB-friendly format (<code>.mat</code>) to facilitate comprehensive analysis with minimal preprocessing.</p>
+        </section>
+    </div>
+
+    <div class="content">
+        <h1>Citation</h1>
+        <ul class="citation-list">
+            <li class="citation-entry">
+                <span class="citation-label">Dataset</span>
+                <span class="citation-label"><a href="bibs/citations-22002622.bib" target="_blank">BibTex ⇓</a></span>
+                <p class="citation-text">Chhatbar, T., Castanier, M., Barron, M., Figueroa-Santos, M., Gorsich, D., Prucka, R., Paredis, C., &amp; Schmid, M. (2026). <i>Deep Orange 14: A Multi-surface Dynamics Dataset for a Full-scale Tracked High-Speed Off-road Autonomous Prototype</i> [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.22002622</p>
+            </li>
+            <li class="citation-entry">
+                <span class="citation-label">Research paper</span>
+                <span class="citation-label"><a href="bibs/citations-20261009T150350.bib" target="_blank">BibTex ⇓</a></span>
+                <p class="citation-text">Chhatbar, T., Castanier, M., Barron, M., Figueroa-Santos, M., Gorsich, D., Prucka, R., Paredis, C., &amp; Schmid, M. (September 15, 2026). “Deep Orange 14: A Full-scale Tracked High-speed Off-road Autonomous Prototype with a Comprehensive Multi-surface Dataset for Dynamics.” <i>ASME Journal of Autonomous Vehicles and Systems.</i> https://doi.org/10.1115/1.4072695</p>
+            </li>
+        </ul>
     </div>
 
     <div class="footer">
@@ -53,8 +96,8 @@
             &copy; Copyright 2024 CU-ICAR Deep Orange <br> Clemson University
         </div>
     </div>
-    <div class="content"></div>
-    <div class="content"></div>
+    <div class="content">
+    </div>
 
 </body>
 </html>

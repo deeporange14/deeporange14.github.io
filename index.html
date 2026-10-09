@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deep Orange</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .eyebrow { color: #e85d00; font-size: 13px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+        .publication-links { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0; }
+        .publication-card { display: flex; min-height: 120px; flex-direction: column; justify-content: space-between; gap: 12px; padding: 20px; border: 1px solid #e6e6e6; border-top: 4px solid #ff6900; border-radius: 10px; text-decoration: none; }
+        .publication-card span { color: #777; font-size: 12px; font-weight: bold; text-transform: uppercase; }
+        .publication-card strong { color: #252525; font-size: 18px; }
+        .publication-card em { color: #d95700; font-size: 14px; font-style: normal; font-weight: bold; }
+    </style>
 </head>
 
 <body>
@@ -30,13 +38,30 @@
         </video> 
     </div>
 
+    <div class="content data-page">
+        <p class="eyebrow">Deep Orange 14 | Research resources</p>
+        <h1>DO-14 Dataset & Research paper are published!</h1>
+        <p class="intro">Explore the Deep Orange 14 vehicle dataset and its accompanying research paper. Both resources are publicly available through their respective repositories.</p>
+
+        <div class="publication-links">
+            <a class="publication-card" href="https://zenodo.org/records/22002622" target="_blank" rel="noopener noreferrer">
+                <span>Dataset | Zenodo</span>
+                <strong>Deep Orange 14: A Multi-surface Dynamics Dataset for a Full-scale Tracked High-Speed Off-road Autonomous Prototype</strong>
+                <em>View dataset ⭷</em>
+            </a>
+            <a class="publication-card" href="https://asmedigitalcollection.asme.org/autonomousvehicles/article/doi/10.1115/1.4072695/1235372" target="_blank" rel="noopener noreferrer">
+                <span>Research paper | ASME</span>
+                <strong>Deep Orange 14: A Full-scale Tracked High-speed Off-road Autonomous Prototype with a Comprehensive Multi-surface Dataset for Dynamics</strong>
+                <em>Open article ⭷</em>
+            </a>
+        </div>
+    </div>
+
     <div class="content">
-        <p>
-            <h4>Welcome to the Deep Orange 14 (DO-14) Data Hub!</h4>
-            The DO-14 vehicle is Clemson University’s cutting-edge, skid-steered, tracked vehicle, created in association the US Army’s DEVCOM GVSC to revolutionize high-speed, off-road autonomy. 
-            <h4> Dive into a wealth of data from DO-14’s extensive testing! </h4>
-            This portal provides datasets, design insights, and specs crafted to push the boundaries in vehicle autonomy, control, and safety. Whether you’re researching or engineering the future of autonomous ground vehicles, explore our resources to discover innovative solutions and valuable validation data in the dynamic world of high-speed, off-road autonomy.
-        </p>
+        <h4>Welcome to the Deep Orange 14 (DO-14) Data Hub!</h4>
+        The DO-14 vehicle is Clemson University’s cutting-edge, skid-steered, tracked vehicle, created in association the US Army’s DEVCOM GVSC to revolutionize high-speed, off-road autonomy. 
+        <h4> Dive into a wealth of data from DO-14’s extensive testing! </h4>
+        This portal provides datasets, design insights, and specs crafted to push the boundaries in vehicle autonomy, control, and safety. Whether you’re researching or engineering the future of autonomous ground vehicles, explore our resources to discover innovative solutions and valuable validation data in the dynamic world of high-speed, off-road autonomy.
     </div>
 
     <div class="content"></div>
